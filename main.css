@@ -21,15 +21,23 @@
 .box1 {
     /*align-self:start;*/
     height: 50px;
-    grid-column: 1/5;
+    grid-column: 1;
     grid-row: 1;
     /* background-color: black; */
 }
 
 .box2 {
     /*align-self:end;*/
-    grid-column: 3;
-    grid-row: 1/3;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.box2 img {
+    margin-top: 10px;
+}
+
+.box2 .inputSearch {
+    float: right;
 }
 
 .box3 {
@@ -37,7 +45,7 @@
     /* justify-self: end; */
     background-size: cover;
     margin-bottom: 125px;
-    margin-right: 155px;
+    margin-right: -200px;
     margin-left: 155px;
     /* margin: 20px; */
     background-position: center;
@@ -46,22 +54,41 @@
 }
 
 .box4 {
-    margin-left: 50px;
-    height: 200px;
-    width: 200px;
+    padding-right: 175px;
+    margin-left: 78px;
+    height: 300px;
+    width: 353px;
     grid-column: 1/2;
     grid-row: 3/4;
-    border: 1px solid #333;
-    background-color: #333;
+    background-color: rgb(19, 19, 19);
 }
 
 .box4 p {
-    font-size: 30px;
+    font-size: 40px;
     color: aliceblue;
 }
 
+.box5 {
+    /* align-self: start; */
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.box5 .navbar {
+    margin-left: 80px;
+}
+
+.box5 a {
+    /* align-self: start; */
+    color: white;
+    text-decoration: none;
+    padding-left: 60px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
 .box1 #logo {
-    height: 50px;
+    height: 95px;
 }
 
 .dot {
@@ -76,15 +103,207 @@
     background-color: yellow;
 }
 
+.calvi {
+    margin: 0px -1px 0px -2px;
+}
+
 .calvi img {
     width: 100%;
     height: 350px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+.slash {
+    margin-left: 10px;
+    height: 1px;
+    width: 16px;
+    background: yellow;
+    position: absolute;
+    margin-top: 10px;
+    transform: rotate(-54deg);
+}
+
+input[type=text],
+select {
+    background: url('./assets/images/icon.png') no-repeat left center;
+    background-color: rgb(19, 19, 19);
+    width: 95%;
+    padding: 14px 31px;
+    margin-top: 8px;
+    margin-left: 5px;
+    display: inline-block;
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.contanier {
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 686px;
+    width: auto;
+}
+
+.heading {
+    /* display: inline; */
+    margin-top: 25px;
+    margin-left: 270px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#part1 {
+    display: inline;
+    font-size: 55px;
+}
+
+#part2 {
+    margin-top: 10px;
+    position: absolute;
+    display: inline;
+    font-size: 55px;
+}
+
+.card1 {
+    background: url('./assets/images/cocktail.png');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    margin-bottom: 250px;
+    grid-row: 2;
+    height: 460px;
+    width: 343px;
+    /* background-color: black; */
+    margin-left: 250px;
+}
+
+.card1Text {
+    width: 150px;
+    font-size: 20px;
+    float: right;
+    margin-right: -130px;
+    margin-top: 80px;
+}
+
+.card2 {
+    margin-top: -40px;
+    margin-right: -100px;
+    grid-row: 2;
+}
+
+.card21 {
+    background: url('./assets/images/schwepes.JPG');
+    background-size: cover;
+    background-position: center;
+    float: right;
+    background-color: black;
+    width: 425px;
+    height: 273px;
+}
+
+
+/* .card23 {
+    float: right;
+    background-color: black;
+    width: 250px;
+    height: 250px;
+} */
+
+.card3 {
+    grid-row: 3;
+    grid-column: 2;
+    /* float: right;
+    background-color: black;
+    width: 250px;
+    height: 250px; */
+}
+
+.card31 {
+    background: url('./assets/images/viski.JPG');
+    background-size: cover;
+    background-position: center;
+    float: right;
+    background-color: black;
+    width: 425px;
+    height: 273px;
+    margin-right: -100px;
+}
+
+.black {
+    margin-top: -27px;
+    height: 500px;
+    background-color: black;
+}
+
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1280px) {
+    /* .box2 .inputSearch {
+        display: none;
+    } */
+    .box3 {
+        margin-right: -173px;
+    }
+    .heading {
+        margin-left: 160px;
+    }
+    .card1 {
+        margin-left: 125px;
+    }
+    .card2 {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .box2 .inputSearch {
+        display: none;
+    }
+    .box3 {
+        margin-right: -13px;
+    }
+    .heading {
+        margin-left: 151px;
+    }
+    .card1 {
+        margin-left: 60px;
+    }
+    .card2 {
+        margin-top: -40px;
+    }
+    .card21 {
+        margin-right: -50px;
+    }
+    .card31 {
+        margin-right: -150px;
+    }
+}
+
+@media (max-width: 979px) {
+    .box2 .inputSearch {
+        display: none;
+    }
+    .box3 {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
     .wrapper {
         background: url(./assets/images/Girl.png);
         background-position: center;
@@ -103,6 +322,12 @@
         grid-column: 1/5;
         grid-row: 1;
     }
+    .box1 #logo {
+        height: 50px;
+    }
+    .box2 .inputSearch {
+        display: none;
+    }
     /* For desktop: */
     .box3 {
         display: none;
@@ -117,15 +342,78 @@
         grid-column: 1/2;
         grid-row: 4/5;
         border: 1px solid #333;
-        background-color: #333;
+        background-color: rgb(19, 19, 19);
+        height: 298px;
+        width: 299px;
+        margin-top: -56px;
+    }
+    .box5 {
+        display: none;
     }
     .calvi img {
         /* width: auto; */
         height: 300px;
     }
+    /* .heading {
+        margin-left: 55px;
+    }
+    .card1 {
+        height: 382px;
+        width: 292px;
+        margin-left: 20px;
+    }
+    .card21 {
+        width: 358px;
+        height: 233px;
+    }
+    .card31 {
+        width: 358px;
+        height: 233px;
+    } */
+    .heading {
+        margin-top: 25px;
+        margin-left: 25px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .card1 {
+        height: 410px;
+        width: 367px;
+        margin-left: 0px;
+    }
+    .card1Text {
+        font-size: 25px;
+        width: 150px;
+        float: right;
+        margin-right: -118px;
+        margin-top: 40px;
+    }
+    .card2 {
+        margin-top: 53px;
+        margin-left: 25px;
+        grid-row: 3;
+    }
+    .card21 {
+        background: url('./assets/images/schwepes.JPG');
+        background-size: cover;
+        background-position: center;
+        float: none;
+        background-color: black;
+        width: 441px;
+        height: 291px;
+        margin-left: 130px;
+        margin-top: 93px;
+    }
+    .card3 {
+        display: none;
+        ;
+    }
+    .black {
+        margin-top: 87px;
+    }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .wrapper {
         background: url(./assets/images/Girl.png);
         background-position: center;
@@ -153,20 +441,64 @@
         grid-row: 1/5;
     }
     .box4 {
+        height: 301px;
+        width: 260px;
         margin-left: 0;
         float: left;
         grid-column: 1/2;
         grid-row: 4/5;
-        border: 1px solid #333;
-        background-color: #333;
+        background-color: rgb(19, 19, 19);
+    }
+    .box4 p {
+        font-size: 35px;
+    }
+    .calvi {
+        width: auto;
+        height: 300px;
+        overflow: hidden;
     }
     .calvi img {
-        /* width: auto; */
-        height: 250px;
+        width: 600px;
+    }
+    .heading {
+        margin-top: 25px;
+        margin-left: 25px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .card1 {
+        height: 299px;
+        width: 235px;
+        margin-left: 0px;
+    }
+    .card1Text {
+        font-size: 25px;
+        width: 150px;
+        float: right;
+        margin-right: -118px;
+        margin-top: 40px;
+    }
+    .card2 {
+        margin-top: 53px;
+        margin-left: 25px;
+        grid-row: 3;
+    }
+    .card21 {
+        background: url('./assets/images/schwepes.JPG');
+        background-size: cover;
+        background-position: center;
+        float: none;
+        background-color: black;
+        width: 340px;
+        height: 237px;
+    }
+    .card3 {
+        display: none;
+        ;
     }
 }
 
-@media only screen and (max-width: 376px) {
+@media (max-width: 376px) {
     .wrapper {
         background: url(./assets/images/Girl.png);
         background-position: center;
@@ -184,6 +516,12 @@
         height: 50px;
         grid-column: 1/5;
         grid-row: 1;
+    }
+    .box2 {
+        grid-column: 3;
+        grid-row: 1;
+        /* margin-right: 237px; */
+        margin-left: -44px;
     }
     /* For desktop: */
     .box3 {
@@ -199,8 +537,7 @@
         float: left;
         grid-column: 1/2;
         grid-row: 4/5;
-        border: 1px solid #333;
-        background-color: #333;
+        background-color: rgb(19, 19, 19);
     }
     .calvi {
         width: auto;
@@ -210,5 +547,41 @@
     }
     .calvi img {
         width: 500px;
+    }
+    .heading {
+        margin-top: 25px;
+        margin-left: 25px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .card1 {
+        height: 299px;
+        width: 235px;
+        margin-left: 0px;
+    }
+    .card1Text {
+        font-size: 25px;
+        width: 150px;
+        float: right;
+        margin-right: -118px;
+        margin-top: 40px;
+    }
+    .card2 {
+        margin-top: 53px;
+        margin-left: 25px;
+        grid-row: 3;
+    }
+    .card21 {
+        background: url('./assets/images/schwepes.JPG');
+        background-size: cover;
+        background-position: center;
+        float: none;
+        background-color: black;
+        width: 317px;
+        height: 208px;
+    }
+    .card3 {
+        display: none;
+        ;
     }
 }
