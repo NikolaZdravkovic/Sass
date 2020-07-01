@@ -108,6 +108,13 @@ body {
     transform: rotate(1deg);
 }
 
+.background {
+    display: none;
+    background: url(./assets/images/Girl.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .box5 {
     /* align-self: start; */
     grid-column: 1/4;
@@ -155,17 +162,17 @@ body {
 .calvi {
     grid-row: 8;
     grid-column: 1/4;
-    height: 603px;
+    /* height: 603px; */
     grid-column: 1/6;
     margin: -116px -1px 0px -4px;
-    background: url('./assets/images/Calvi.JPG');
+    /* background: url('./assets/images/Calvi.JPG');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .calvi img {
     width: 100%;
-    height: 400px;
+    height: 100%;
 }
 
 ul {
@@ -228,8 +235,8 @@ select {
 
 .heading {
     /* display: inline; */
-    margin-top: 73px;
-    margin-left: 270px;
+    margin-top: 91px;
+    margin-left: 264px;
     grid-row: 1;
     grid-column: 1;
 }
@@ -253,18 +260,18 @@ select {
     grid-column: 1;
     margin-bottom: 250px;
     grid-row: 2;
-    height: 688px;
-    width: 515px;
-    margin-left: 250px;
-    margin-top: 125px;
+    height: 728px;
+    width: 545px;
+    margin-left: 200px;
+    margin-top: 69px;
 }
 
 .card1Text {
-    width: 154px;
-    font-size: 27px;
+    width: 210px;
+    font-size: 30px;
     float: right;
-    margin-right: -113px;
-    margin-top: 175px;
+    margin-right: -152px;
+    margin-top: 216px;
 }
 
 .card2 {
@@ -279,15 +286,16 @@ select {
     background-position: center;
     float: right;
     background-color: black;
-    width: 609px;
-    height: 387px;
-    margin-top: 44px;
+    width: 650px;
+    height: 420px;
+    margin-top: -31px;
+    margin-right: -44px;
 }
 
 .card21 p {
-    margin-top: 154px;
+    margin-top: 171px;
     padding: 132px 143px 24px 63px;
-    font-size: 25px;
+    font-size: 27px;
     color: white;
 }
 
@@ -302,16 +310,16 @@ select {
     background-position: center;
     float: right;
     background-color: black;
-    width: 609px;
-    height: 387px;
-    margin-right: -100px;
+    width: 650px;
+    height: 420px;
+    margin-right: -144px;
     margin-top: 117px;
 }
 
 .card31 p {
-    font-size: 25px;
+    font-size: 26px;
     color: white;
-    margin-top: 154px;
+    margin-top: 200px;
     padding: 97px 171px 13px 63px;
 }
 
@@ -329,16 +337,134 @@ select {
     background: yellow;
     position: absolute;
     margin-top: 74px;
-    transform: rotate(-12deg);
+    transform: rotate(-15deg);
 }
 
 
 /* Media Queries */
 
+@media(max-width:1680px) {
+    #logo {
+        height: 130px;
+    }
+    .box4 {
+        margin: 81px 0px 0px 194px;
+        height: 409px;
+        width: 509px;
+    }
+    .box4Head {
+        padding: 7px 92px 7px 103px;
+        font-size: 54px;
+    }
+    .box5 a {
+        font-size: 21.519px;
+    }
+    .card1 {
+        height: 629px;
+        width: 490px;
+    }
+    .card21 {
+        width: 589px;
+        height: 381px;
+    }
+    .card31 {
+        margin-top: 49px;
+        position: relative;
+        width: 589px;
+        height: 381px;
+    }
+    .black {
+        grid-row: 10;
+        grid-column: 1/6;
+        height: 500px;
+        margin-top: -78px;
+    }
+    .line {
+        width: 578px;
+    }
+}
+
+@media(max-width:1440px) {
+    #logo {
+        height: 118px;
+        margin-left: 49px;
+    }
+    ul {
+        margin-left: -135px;
+    }
+    .box2 img {
+        width: 31px;
+    }
+    .box5 a {
+        font-size: 18.519px;
+    }
+    input[type=text],
+    select {
+        height: 51px;
+    }
+    .box3 {
+        margin: 76px 97px 86px -395px;
+    }
+    .box4 {
+        height: 369px;
+        width: 450px;
+    }
+    .box4Head {
+        padding: 19px 56px 8px 77px;
+        font-size: 48px;
+    }
+    .createdBy {
+        padding-left: 81px;
+    }
+    .card1 {
+        height: 525px;
+        width: 395px;
+    }
+    .card1Text {
+        width: 189px;
+        font-size: 23px;
+        margin-right: -152px;
+        margin-top: 172px;
+    }
+    #part1 {
+        font-size: 90px
+    }
+    #part2 {
+        font-size: 86px;
+    }
+    .card21 {
+        width: 483px;
+        height: 295px;
+    }
+    .card21 p {
+        font-size: 23px;
+        margin-top: 67px;
+        padding: 148px 156px 16px 41px;
+    }
+    .card31 {
+        margin-top: -410px;
+        width: 483px;
+        height: 295px;
+    }
+    .card31 p {
+        font-size: 22px;
+        margin-top: 100px;
+        padding: 143px 147px 14px 63px;
+    }
+    .black {
+        margin-top: -284px;
+    }
+    .line {
+        margin-left: 149px;
+        margin-top: 13px;
+        width: 455px;
+        margin-top: 35px;
+    }
+}
+
+
+/* 
 @media (max-width: 1280px) {
-    /* .box2 .inputSearch {
-        display: none;
-    } */
     .box3 {
         margin-right: -173px;
     }
@@ -363,11 +489,18 @@ select {
     .line {
         width: 500px
     }
-}
+} */
 
 @media (max-width: 1024px) {
+    #logo {
+        height: 102px;
+        margin-left: 23px;
+    }
     .box2 .inputSearch {
         display: none;
+    }
+    .navbar {
+        margin: 74px 0px -13px 282px;
     }
     .box2 img {
         margin-top: 10px;
@@ -375,38 +508,82 @@ select {
         width: 26px;
     }
     .box3 {
-        margin-right: -13px;
+        margin: 76px 97px 86px -521px;
+        grid-column: 3/5;
     }
     .box4 {
         padding: 0px;
         margin-left: 52px;
-        width: 406px;
-        height: 391px;
+        width: 316px;
+        height: 290px;
+    }
+    .createdBy {
+        padding-left: 54px;
     }
     .box4Head {
-        font-size: 54px;
+        padding: 1px 23px 17px 51px;
+        font-size: 36px;
+    }
+    .box5 a {
+        font-size: 14.519px;
     }
     .heading {
-        margin-left: 151px;
+        margin-left: 117px;
     }
     .card1 {
+        margin-bottom: 289px;
         margin-left: 60px;
+        margin-top: 0px;
+        height: 368px;
+        width: 301px;
+    }
+    .card1Text {
+        width: 153px;
+        font-size: 20px;
+        margin-right: -121px;
+        margin-top: 83px;
     }
     .card2 {
         margin-top: -40px;
     }
     .card21 {
+        width: 404px;
+        height: 235px;
         margin-right: -50px;
     }
+    .card21 p {
+        font-size: 18px;
+        margin-top: 22px;
+        padding: 148px 146px 16px 41px;
+    }
     .card31 {
+        width: 404px;
+        height: 235px;
         margin-right: -150px;
+        margin-top: -507px;
+    }
+    .card31 p {
+        font-size: 18px;
+        margin-top: 41px;
+        padding: 139px 130px 11px 32px;
+    }
+    #part1 {
+        font-size: 67px;
+    }
+    #part2 {
+        margin-top: 20px;
+        font-size: 63px;
     }
     .line {
-        width: 390px;
+        width: 308px;
+    }
+    .black {
+        margin-top: -497px;
     }
 }
 
-@media (max-width: 979px) {
+
+/* @media (max-width: 979px) {
     .box2 .inputSearch {
         display: none;
     }
@@ -438,8 +615,10 @@ select {
     .line {
         width: 370px;
     }
-}
+} */
 
+
+/* 
 @media (max-width: 768px) {
     .wrapper {
         background: url(./assets/images/Girl.png);
@@ -464,7 +643,6 @@ select {
     .box2 .inputSearch {
         display: none;
     }
-    /* For desktop: */
     .box3 {
         display: none;
         background-size: cover;
@@ -490,7 +668,6 @@ select {
         display: none;
     }
     .calvi img {
-        /* width: auto; */
         height: 300px;
     }
     .heading {
@@ -546,9 +723,10 @@ select {
     .black {
         margin-top: 87px;
     }
-}
+} */
 
-@media (max-width: 500px) {
+
+/* @media (max-width: 500px) {
     .wrapper {
         background: url(./assets/images/Girl.png);
         background-position: center;
@@ -562,12 +740,10 @@ select {
         height: 600px;
     }
     .box1 {
-        /*align-self:start;*/
         height: 50px;
         grid-column: 1/5;
         grid-row: 1;
     }
-    /* For desktop: */
     .box3 {
         display: none;
         background-size: cover;
@@ -646,61 +822,70 @@ select {
         width: 208px;
         margin-left: 182px;
     }
-}
+} */
 
 @media (max-width: 376px) {
     .wrapper {
-        background: url(./assets/images/Girl.png);
+        /* background: url(./assets/images/Girl.png);
         background-position: center;
-        background-size: cover;
+        background-size: cover; */
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-auto-rows: minmax(100px, auto);
         grid-gap: 1em;
         justify-items: stretch;
         align-items: stretch;
-        height: 600px;
+        /* height: 600px; */
+    }
+    .background {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    #logo {
+        margin-top: -2px;
+        margin-left: 8px;
+        height: 82px;
     }
     .box1 {
         height: 50px;
         grid-column: 1/5;
         grid-row: 1;
     }
-    .box1 #logo {
-        margin: 0px;
-        height: 63px;
-    }
     .box2 {
         grid-column: 3;
         grid-row: 1;
         margin-left: -44px;
     }
+    .box3 {
+        /* margin: 16px -140px 51px -59px */
+    }
     .box2 img {
-        margin-top: 4px;
-        margin-right: 15px;
-        width: 44px;
-        height: 47px;
+        margin-top: -20px;
+        width: 46px;
+        height: 52px;
+        margin-left: 10px;
     }
     /* For desktop: */
-    .box3 {
-        margin: 0;
-        display: none;
-        background-size: cover;
-        background-position: center;
-        grid-column: 1/5;
-        grid-row: 1/5;
-    }
     .box4 {
         margin: 0px;
         float: left;
         grid-column: 1/2;
         grid-row: 4/5;
         background-color: rgb(19, 19, 19);
-        height: 241px;
-        width: 268px;
+        height: 253px;
+        width: 257px;
+    }
+    .box4Head {
+        padding: 11px 33px 16px 30px;
     }
     .box4 p {
-        font-size: 30px;
+        font-size: 37px;
+    }
+    .dots {
+        margin-left: 58px;
+        margin-top: -30px;
     }
     .createdBy {
         display: none;
@@ -708,11 +893,14 @@ select {
     .dots {
         display: block;
     }
-    .calvi {
+    /* .calvi {
         width: auto;
         height: 300px;
         ;
         overflow: hidden;
+    } */
+    .black {
+        margin-top: 0px;
     }
     .calvi img {
         width: 577px;
