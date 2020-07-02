@@ -21,15 +21,14 @@ body {
     grid-gap: 1em;
     justify-items: stretch;
     align-items: stretch;
-    /* height: 1000px; */
     margin-right: auto;
-    /* 1 */
     margin-left: auto;
 }
 
-.wrapper>div {
-    /* background: #eee; */
-    /* padding: 1em; */
+.wrapper>div {}
+
+.searchBtn {
+    float: left;
 }
 
 .box1 {
@@ -56,9 +55,7 @@ body {
 
 .box3 {
     background: url(./assets/images/Girl.png);
-    /* justify-self: end; */
     background-size: cover;
-    /* margin: 20px; */
     margin: 73px 98px 81px -468px;
     background-position: center;
     grid-column: 2/5;
@@ -66,10 +63,6 @@ body {
 }
 
 .box4 {
-    /* padding: 25px;
-        margin-left: 78px;
-        height: 400px;
-        width: 480px; */
     margin: 81px 0px 0px 194px;
     height: 526px;
     width: 656px;
@@ -110,9 +103,6 @@ body {
 
 .background {
     display: none;
-    background: url(./assets/images/Girl.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .box5 {
@@ -162,12 +152,8 @@ body {
 .calvi {
     grid-row: 8;
     grid-column: 1/4;
-    /* height: 603px; */
     grid-column: 1/6;
     margin: -116px -1px 0px -4px;
-    /* background: url('./assets/images/Calvi.JPG');
-    background-position: center;
-    background-size: cover; */
 }
 
 .calvi img {
@@ -230,27 +216,32 @@ select {
     height: 1107px;
     width: auto;
     margin-right: -1px;
-    margin-top: -15px;
+    margin-top: -20px;
 }
 
 .heading {
     /* display: inline; */
-    margin-top: 91px;
-    margin-left: 264px;
+    margin-top: 43px;
+    margin-left: 319px;
     grid-row: 1;
     grid-column: 1;
+    font-family: 'Lora', serif;
+}
+
+.heading p {
+    font-weight: 800;
 }
 
 #part1 {
     display: inline;
-    font-size: 135px;
+    font-size: 123px;
 }
 
 #part2 {
     margin-top: 29px;
     position: absolute;
     display: inline;
-    font-size: 133px;
+    font-size: 119px;
 }
 
 .card1 {
@@ -260,10 +251,10 @@ select {
     grid-column: 1;
     margin-bottom: 250px;
     grid-row: 2;
-    height: 728px;
+    height: 702px;
     width: 545px;
-    margin-left: 200px;
-    margin-top: 69px;
+    margin-left: 253px;
+    margin-top: 47px;
 }
 
 .card1Text {
@@ -300,6 +291,7 @@ select {
 }
 
 .card3 {
+    margin-top: -52px;
     grid-row: 3;
     grid-column: 2;
 }
@@ -372,6 +364,9 @@ select {
         position: relative;
         width: 589px;
         height: 381px;
+    }
+    .contanier {
+        margin-top: -20px;
     }
     .black {
         grid-row: 10;
@@ -462,35 +457,6 @@ select {
     }
 }
 
-
-/* 
-@media (max-width: 1280px) {
-    .box3 {
-        margin-right: -173px;
-    }
-    .box4 {
-        padding: 10px;
-        height: 400px;
-        ;
-        width: 425px;
-    }
-    .box4Head {
-        padding: 0px 0px 2px 38px;
-    }
-    .heading {
-        margin-left: 160px;
-    }
-    .card1 {
-        margin-left: 125px;
-    }
-    .card2 {
-        margin-top: -40px;
-    }
-    .line {
-        width: 500px
-    }
-} */
-
 @media (max-width: 1024px) {
     #logo {
         height: 102px;
@@ -574,6 +540,9 @@ select {
         margin-top: 20px;
         font-size: 63px;
     }
+    .contanier {
+        margin-top: -20px;
+    }
     .line {
         width: 308px;
     }
@@ -582,186 +551,36 @@ select {
     }
 }
 
-
-/* @media (max-width: 979px) {
-    .box2 .inputSearch {
+@media (max-width:768px) {
+    #logo {
+        position: absolute;
+    }
+    .box2 img {
+        margin-top: 28px;
+        width: 39px;
+        height: 42px;
+        margin-left: -21px;
+        position: absolute;
+    }
+    .navbar {
         display: none;
     }
     .box3 {
-        margin-right: 0px;
-    }
-    .box5 a {
-        font-size: 16px;
-    }
-    .heading {
-        margin-top: 90px;
-    }
-    .card1 {
-        margin-top: 10px;
-        height: 402px;
-        width: 311px;
-    }
-    .card1Text {
-        margin-right: -119px;
-    }
-    .card21 {
-        width: 409px;
-        height: 254px;
-    }
-    .card31 {
-        width: 409px;
-        height: 254px;
-    }
-    .line {
-        width: 370px;
-    }
-} */
-
-
-/* 
-@media (max-width: 768px) {
-    .wrapper {
-        background: url(./assets/images/Girl.png);
-        background-position: center;
-        background-size: cover;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-auto-rows: minmax(100px, auto);
-        grid-gap: 1em;
-        justify-items: stretch;
-        align-items: stretch;
-        height: 600px;
-    }
-    .box1 {
-        height: 50px;
+        margin: -96px -17px -3px 0px;
         grid-column: 1/5;
-        grid-row: 1;
-    }
-    .box1 #logo {
-        height: 92px;
-    }
-    .box2 .inputSearch {
-        display: none;
-    }
-    .box3 {
-        display: none;
-        background-size: cover;
-        background-position: center;
-        grid-column: 1/5;
-        grid-row: 1/5;
+        grid-row: 1/7;
     }
     .box4 {
-        margin-left: 0;
-        float: left;
-        grid-column: 1/2;
-        grid-row: 4/5;
-        border: 1px solid #333;
-        background-color: rgb(19, 19, 19);
-        height: 298px;
-        width: 299px;
-        margin-top: -56px;
+        margin: auto;
+        grid-column: 1/1;
+        grid-row: 5/7;
+        width: 418px;
+        height: 359px;
     }
     .box4Head {
-        font-size: 40px;
-    }
-    .box5 {
-        display: none;
-    }
-    .calvi img {
-        height: 300px;
-    }
-    .heading {
-        margin-top: 25px;
-        margin-left: 25px;
-        grid-row: 1;
-        grid-column: 1;
-    }
-    .contanier {
-        margin-bottom: -127px;
-    }
-    .card1 {
-        height: 331px;
-        width: 269px;
-        margin-left: 9px;
-    }
-    .card1Text {
-        font-size: 21px;
-        width: 155px;
-        float: right;
-        margin-right: -120px;
-        margin-top: 40px;
-        padding-right: 0px;
-    }
-    .card2 {
-        margin-top: -35px;
-        grid-row: 2;
-    }
-    .card21 {
-        float: right;
-        width: 339px;
-        height: 227px;
-    }
-    .card21 p {
-        padding-top: 161px;
-        font-size: 16px;
-        margin: 0px;
-    }
-    .card31 {
-        float: right;
-        width: 339px;
-        height: 227px;
-        margin-top: -225px;
-    }
-    .card31 p {
-        margin-top: 120px;
-        padding: 46px 65px 12px 23px;
-        font-size: 16px;
-    }
-    .line {
-        width: 272px;
-    }
-    .black {
-        margin-top: 87px;
-    }
-} */
-
-
-/* @media (max-width: 500px) {
-    .wrapper {
-        background: url(./assets/images/Girl.png);
-        background-position: center;
-        background-size: cover;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-auto-rows: minmax(100px, auto);
-        grid-gap: 1em;
-        justify-items: stretch;
-        align-items: stretch;
-        height: 600px;
-    }
-    .box1 {
-        height: 50px;
-        grid-column: 1/5;
-        grid-row: 1;
-    }
-    .box3 {
-        display: none;
-        background-size: cover;
-        background-position: center;
-        grid-column: 1/5;
-        grid-row: 1/5;
-    }
-    .box4 {
-        height: 258px;
-        width: 260px;
-        margin: 0px;
-        float: left;
-        grid-column: 1/2;
-        grid-row: 4/5;
-        background-color: rgb(19, 19, 19);
-    }
-    .box4 p {
-        font-size: 30px;
+        padding: 6px 29px 5px 79px;
+        line-height: 1.3;
+        font-size: 45px;
     }
     .createdBy {
         display: none;
@@ -770,66 +589,65 @@ select {
         display: block;
     }
     .calvi {
-        width: auto;
-        height: 300px;
-        overflow: hidden;
-    }
-    .card21 p {
-        padding-top: 139px;
-        font-size: 25px;
-        margin: 0px;
+        background: url(./assets/images/Calvi_mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 785px 293px;
+        height: 302px;
+        margin-top: -136px;
     }
     .calvi img {
-        width: 600px;
-    }
-    .heading {
-        margin-top: 25px;
-        margin-left: 25px;
-        grid-row: 1;
-        grid-column: 1;
+        display: none;
     }
     .card1 {
-        height: 299px;
-        width: 235px;
-        margin-left: 0px;
+        margin-bottom: 289px;
+        margin-left: 11px;
+        margin-top: -73px;
+        height: 368px;
+        width: 301px;
     }
     .card1Text {
-        font-size: 25px;
-        width: 150px;
-        float: right;
-        margin-right: -118px;
-        margin-top: 40px;
+        width: 68px;
+        font-size: 19px;
+        margin-right: -40px;
+        margin-top: 112px;
+    }
+    .heading {
+        margin-top: 4px;
+        margin-left: 39px;
     }
     .card2 {
-        margin-top: 53px;
-        margin-left: 25px;
-        grid-row: 3;
+        margin-top: -72px;
+    }
+    .black {
+        height: 533px;
+        margin-top: -540px;
     }
     .card21 {
-        background: url('./assets/images/schwepes.JPG');
-        background-size: cover;
-        background-position: center;
-        float: none;
-        background-color: black;
-        width: 340px;
-        height: 237px;
+        width: 351px;
+        height: 205px;
     }
-    .card3 {
-        display: none;
-        ;
+    .card21 p {
+        padding: 109px 146px 16px 41px;
+    }
+    .card31 {
+        width: 351px;
+        height: 205px;
+    }
+    .card31 p {
+        padding: 79px 130px 11px 32px;
     }
     .line {
-        width: 208px;
-        margin-left: 182px;
+        width: 207px;
     }
-} */
+}
 
-@media (max-width: 376px) {
+@media(max-width:414px) {
     .wrapper {
         /* background: url(./assets/images/Girl.png);
         background-position: center;
         background-size: cover; */
-        display: grid;
+        display: block;
         grid-template-columns: 1fr 2fr 1fr;
         grid-auto-rows: minmax(100px, auto);
         grid-gap: 1em;
@@ -839,14 +657,20 @@ select {
     }
     .background {
         display: block;
+        background: url(./assets/images/girl\ mobile.png);
+        margin-top: -249px;
+        background-repeat: no-repeat;
+        background-position: 46% 100%;
+        height: 789px;
+        background-size: 418px 699px;
     }
     .navbar {
         display: none;
     }
     #logo {
-        margin-top: -2px;
-        margin-left: 8px;
-        height: 82px;
+        margin-top: -1px;
+        margin-left: 9px;
+        height: 80px;
     }
     .box1 {
         height: 50px;
@@ -858,30 +682,26 @@ select {
         grid-row: 1;
         margin-left: -44px;
     }
-    .box3 {
-        /* margin: 16px -140px 51px -59px */
-    }
     .box2 img {
-        margin-top: -20px;
-        width: 46px;
-        height: 52px;
-        margin-left: 10px;
+        margin-top: -64px;
+        width: 39px;
+        height: 42px;
+        margin-left: -21px;
+        position: absolute;
     }
     /* For desktop: */
     .box4 {
-        margin: 0px;
+        margin: 240px 0px 0px 0px;
         float: left;
-        grid-column: 1/2;
-        grid-row: 4/5;
-        background-color: rgb(19, 19, 19);
-        height: 253px;
-        width: 257px;
+        height: 299px;
+        width: 309px;
     }
     .box4Head {
-        padding: 11px 33px 16px 30px;
+        padding: 4px 33px 16px 30px;
+        line-height: 1.3;
     }
     .box4 p {
-        font-size: 37px;
+        font-size: 34px;
     }
     .dots {
         margin-left: 58px;
@@ -893,34 +713,183 @@ select {
     .dots {
         display: block;
     }
-    /* .calvi {
-        width: auto;
-        height: 300px;
-        ;
-        overflow: hidden;
-    } */
+    .calvi {
+        background: url(./assets/images/Calvi_mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 424px 242px;
+        height: 316px;
+        margin-top: -37px;
+    }
     .black {
         margin-top: 0px;
     }
     .calvi img {
-        width: 577px;
+        width: 100%;
+        display: none;
     }
     .heading {
-        margin-top: 25px;
-        margin-left: 25px;
+        margin-top: 41px;
+        margin-left: 20px;
         grid-row: 1;
         grid-column: 1;
     }
     .card1 {
-        height: 299px;
-        width: 235px;
-        margin-left: 0px;
+        margin-top: -48px;
+        height: 308px;
+        width: 251px;
+        margin-left: -5px;
     }
     .card1Text {
-        font-size: 25px;
-        width: 150px;
+        font-size: 22px;
+        width: 128px;
         float: right;
-        margin-right: -118px;
+        margin-right: -108px;
+        margin-top: 40px;
+    }
+    .card2 {
+        margin-top: 53px;
+        margin-left: 49px;
+        grid-row: 3;
+    }
+    .card21 {
+        background: url('./assets/images/schwepes.JPG');
+        background-position: 126% 100%;
+        background-repeat: no-repeat;
+        background-size: 385px 223px;
+        float: none;
+        width: 338px;
+        height: 216px;
+        margin-top: -426px;
+    }
+    .card21 p {
+        padding: 122px 59px 16px 41px;
+        font-size: 21px;
+        margin: 0px;
+    }
+    .card3 {
+        display: none;
+        ;
+    }
+    .contanier {
+        margin-top: -37px;
+    }
+    .line {
+        margin-left: 160px;
+        width: 216px;
+    }
+    .black {
+        margin-top: -399px;
+    }
+}
+
+@media (max-width: 376px) {
+    .wrapper {
+        /* background: url(./assets/images/Girl.png);
+        background-position: center;
+        background-size: cover; */
+        display: block;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1em;
+        justify-items: stretch;
+        align-items: stretch;
+        /* height: 600px; */
+    }
+    .searchBtn {
+        float: right;
+    }
+    .background {
+        margin-left: 0px;
+        background: url(./assets/images/girl\ mobile.png);
+        margin-top: -237px;
+        background-repeat: no-repeat;
+        background-position: 47% 100%;
+        height: 811px;
+        background-size: 377px 682px;
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    #logo {
+        margin-top: -1px;
+        margin-left: 9px;
+        height: 80px;
+    }
+    .box1 {
+        height: 50px;
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+    .box2 {
+        grid-column: 3;
+        grid-row: 1;
+        margin-left: -44px;
+    }
+    .box2 img {
+        margin-top: -64px;
+        width: 39px;
+        height: 42px;
+        margin-left: -21px;
+        position: absolute;
+    }
+    /* For desktop: */
+    .box4 {
+        margin: 280px 0px 0px 0px;
+        float: left;
+        height: 294px;
+        width: 309px;
+    }
+    .box4Head {
+        padding: 4px 33px 16px 30px;
+        line-height: 1.3;
+    }
+    .box4 p {
+        font-size: 34px;
+    }
+    .dots {
+        margin-left: 58px;
+        margin-top: -30px;
+    }
+    .createdBy {
+        display: none;
+    }
+    .dots {
+        display: block;
+    }
+    .calvi {
+        background: url(./assets/images/Calvi_mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 384px 242px;
+        height: 316px;
+        margin-top: -37px;
+    }
+    .black {
+        margin-top: 0px;
+    }
+    .calvi img {
+        width: 100%;
+        display: none;
+    }
+    .heading {
+        margin-top: 41px;
+        margin-left: 20px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .card1 {
+        margin-top: -48px;
+        height: 308px;
+        width: 251px;
+        margin-left: -5px;
+    }
+    .card1Text {
+        font-size: 22px;
+        width: 128px;
+        float: right;
+        margin-right: -108px;
         margin-top: 40px;
     }
     .card2 {
@@ -930,64 +899,56 @@ select {
     }
     .card21 {
         background: url('./assets/images/schwepes.JPG');
-        background-size: cover;
-        background-position: center;
+        background-position: 126% 100%;
+        background-repeat: no-repeat;
+        background-size: 385px 223px;
         float: none;
-        background-color: black;
-        width: 317px;
-        height: 208px;
+        width: 338px;
+        height: 216px;
+        margin-top: -426px;
     }
     .card21 p {
-        padding-top: 133px;
-        font-size: 20px;
+        padding: 122px 59px 16px 41px;
+        font-size: 21px;
         margin: 0px;
     }
     .card3 {
         display: none;
         ;
     }
+    .contanier {
+        margin-top: -37px;
+    }
     .line {
         margin-left: 160px;
         width: 191px;
     }
-}
-
-@media (max-width: 360px) {
-    .calvi img {
-        width: 553px;
-        height: 244px;
-    }
-    .contanier {
-        margin-top: -56px;
-    }
-    .line {
-        width: 245px;
+    .black {
+        margin-top: -399px;
     }
 }
 
 @media (max-width: 320px) {
-    .calvi img {
-        width: 500px;
-        height: 244px;
+    .box4 {
+        width: 321px
     }
-    .contanier {
-        margin-top: -56px;
+    .calvi {
+        background-size: 325px 246px;
     }
     .card1Text {
         font-size: 20px;
+        width: 105px;
+        float: right;
+        margin-right: -75px;
+        margin-top: 40px;
     }
     .card21 {
-        width: 275px;
-        height: 178px;
-    }
-    .card21 p {
-        padding-top: 113px;
-        font-size: 17px;
+        margin-left: -21px;
+        width: 328px;
+        height: 209px;
     }
     .line {
-        margin-left: 136px;
-        width: 191px;
-        margin-top: 41px;
-        width: 163px;
+        margin-left: 135px;
+        width: 189px;
     }
 }
