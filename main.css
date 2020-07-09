@@ -3,6 +3,85 @@ body {
     margin: 0px;
 }
 
+#slides {
+    margin-right: 178px;
+    position: relative;
+    height: 823px;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide:nth-of-type(1) {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    background-size: 95% 100%;
+    ;
+    width: 100%;
+    background-image: url('./assets/images/girl_desktop.png');
+}
+
+.slide:nth-of-type(2) {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    background-size: 95% 100%;
+    ;
+    width: 100%;
+    background-image: url('./assets/images/nikola-stojanovic-ObLkqLhLZ_E-unsplash.jpg');
+}
+
+.slide:nth-of-type(3) {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    background-size: 95% 100%;
+    ;
+    width: 100%;
+    background-image: url('./assets/images/ali-arif-soydas-sTNx6633o_s-unsplash.jpg');
+}
+
+#dotsDesktop {
+    margin-top: -23px;
+    margin-left: 594px;
+    grid-row: 6;
+    grid-column: 2;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.dotDesktop {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 4px 0 4px;
+}
+
+.dotDesktop:hover,
+.dotDesktop:focus,
+.dotDesktop.active {
+    background: yellow;
+}
+
 .top {
     display: inline;
 }
@@ -54,21 +133,25 @@ body {
 }
 
 .box3 {
-    background: url(./assets/images/Girl.png);
+    /* background: url(./assets/images/Girl.png); */
     background-size: cover;
-    margin: 73px 98px 81px -468px;
+    /* margin: 73px 98px 81px -468px; */
+    margin-top: 90px;
     background-position: center;
     grid-column: 2/5;
     grid-row: 2/7;
 }
 
 .box4 {
-    margin: 81px 0px 0px 194px;
-    height: 526px;
-    width: 656px;
-    grid-column: 1/1;
+    /* margin: 81px 0px 0px 194px; */
+    height: 444px;
+    margin-top: 71px;
+    margin-left: -127px;
+    width: 540px;
+    grid-column: 2;
     grid-row: 4/4;
     background-color: rgb(19, 19, 19);
+    z-index: 2;
 }
 
 .box4 p {
@@ -77,8 +160,9 @@ body {
 }
 
 .box4Head {
-    padding: 8px 153px 7px 103px;
-    font-size: 69px;
+    /* padding: 8px 153px 7px 103px; */
+    padding: 8px 98px 8px 103px;
+    font-size: 57px;
     line-height: 1.2;
 }
 
@@ -185,6 +269,12 @@ li {
     position: absolute;
     top: 61px;
     margin-left: 29px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
 }
 
 input[type=text],

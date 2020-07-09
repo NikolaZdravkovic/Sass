@@ -51,7 +51,19 @@
                     <input type="text" id="fname" name="firstname" placeholder="TROUVER UN LIEU">
                 </div>
             </div>
-            <div class="box box3"></div>
+            <div class="box box3">
+                <div id="slides">
+                    <div class="slide showing"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+
+            </div>
+            <div id="dotsDesktop">
+                <div class="dotDesktop active" onClick="show(1)"></div>
+                <div class="dotDesktop" onClick="show(2)"></div>
+                <div class="dotDesktop" onClick="show(3)"></div>
+            </div>
             <div class="box box4">
                 <p class="box4Head">
                     Lorem ipsum dolor sit amet, consectetur
@@ -106,7 +118,7 @@
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
