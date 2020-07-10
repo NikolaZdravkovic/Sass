@@ -21,10 +21,64 @@ body {
     background-position: center;
 }
 
+#createdBy {
+    margin: 77px 0px 54px 99px;
+    font-size: 25px;
+    position: relative;
+}
+
+.createdByText {
+    position: absolute;
+    margin-top: 250px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.createdByText.show {
+    opacity: 1;
+    z-index: 2;
+}
+
+#box4Head {
+    margin: 11px 45px 0px 97px;
+    position: relative;
+}
+
+.box4text {
+    position: absolute;
+    font-size: 65px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.box4text.showText {
+    opacity: 1;
+    z-index: 2;
+}
+
 .slide.showing {
     opacity: 1;
     z-index: 2;
 }
+
+
+/* .createdByText:nth-of-type(1) {
+    background-color: tomato;
+}
+
+.createdByText:nth-of-type(2) {
+    background-color: saddlebrown;
+}
+
+.createdByText:nth-of-type(3) {
+    background-color: green;
+} */
 
 .slide:nth-of-type(1) {
     background-position: center;
@@ -181,7 +235,7 @@ body {
     width: 40px;
     background: yellow;
     position: absolute;
-    margin-top: -8px;
+    margin-top: 304px;
     transform: rotate(1deg);
 }
 
@@ -656,7 +710,7 @@ select {
         display: none;
     }
     .box3 {
-        margin: -96px -17px -3px 0px;
+        margin: -105px -16px -4px 0px;
         grid-column: 1/5;
         grid-row: 1/7;
     }
@@ -874,6 +928,33 @@ select {
 }
 
 @media (max-width: 376px) {
+    #dotsDesktop {
+        margin-left: 0px;
+        z-index: 3;
+        position: relative;
+        margin-top: -120px;
+    }
+    #createdBy {
+        display: none;
+    }
+    #slides {
+        margin: 0;
+    }
+    .slide:nth-of-type(1) {
+        width: 96%;
+        margin: -33px 0px 0px 0px;
+        background-size: 1065px 811px;
+    }
+    .slide:nth-of-type(2) {
+        width: 96%;
+        margin: -33px 0px 0px 0px;
+        background-size: 1065px 811px;
+    }
+    .slide:nth-of-type(3) {
+        width: 96%;
+        margin: -33px 0px 0px 0px;
+        background-size: 1065px 811px;
+    }
     .wrapper {
         /* background: url(./assets/images/Girl.png);
         background-position: center;
@@ -897,12 +978,13 @@ select {
         background-position: 47% 100%;
         height: 811px;
         background-size: 377px 682px;
-        display: block;
+        display: none;
     }
     .navbar {
         display: none;
     }
     #logo {
+        z-index: 3;
         margin-top: -1px;
         margin-left: 9px;
         height: 80px;
@@ -918,6 +1000,7 @@ select {
         margin-left: -44px;
     }
     .box2 img {
+        z-index: 3;
         margin-top: -64px;
         width: 39px;
         height: 42px;
@@ -926,10 +1009,12 @@ select {
     }
     /* For desktop: */
     .box4 {
-        margin: 280px 0px 0px 0px;
+        position: relative;
+        display: block;
+        margin: -250px 0px 0px -21px;
         float: left;
-        height: 294px;
-        width: 309px;
+        height: 317px;
+        width: 319px;
     }
     .box4Head {
         padding: 4px 33px 16px 30px;
@@ -946,7 +1031,7 @@ select {
         display: none;
     }
     .dots {
-        display: block;
+        display: none;
     }
     .calvi {
         background: url(./assets/images/Calvi_mobile.png);
@@ -954,7 +1039,7 @@ select {
         background-position: center;
         background-size: 384px 242px;
         height: 316px;
-        margin-top: -37px;
+        margin-top: 28px;
     }
     .black {
         margin-top: 0px;
